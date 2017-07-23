@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yydkj.ui.activity.MainActivity">
+
+    <!--显示fragment区域-->
+    <FrameLayout
+        android:id="@+id/fl_main_show_layout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--底部fragmentTabHost-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <android.support.v4.app.FragmentTabHost
+            android:layout_width="match_parent"
+            android:id="@+id/ftb_main_bottom_layout"
+            android:layout_height="50dp"/>
+        <!--<ImageView
+            android:layout_width="45dp"
+            android:src="中间图标（如果有的话）"
+            android:layout_gravity="center"
+            android:id="@+id/iv_main_click"
+            android:layout_height="45dp"/>-->
+
+    </FrameLayout>
+</LinearLayout>
